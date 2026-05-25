@@ -1,0 +1,387 @@
+[gd_resource type="SpriteFrames" load_steps=74 format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south/frame_000.png" id="1_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south/frame_001.png" id="2_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south/frame_002.png" id="3_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south/frame_003.png" id="4_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south/frame_004.png" id="5_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south/frame_005.png" id="6_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south-east/frame_000.png" id="7_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south-east/frame_001.png" id="8_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south-east/frame_002.png" id="9_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south-east/frame_003.png" id="10_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south-east/frame_004.png" id="11_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south-east/frame_005.png" id="12_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/east/frame_000.png" id="13_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/east/frame_001.png" id="14_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/east/frame_002.png" id="15_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/east/frame_003.png" id="16_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/east/frame_004.png" id="17_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/east/frame_005.png" id="18_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north-east/frame_000.png" id="19_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north-east/frame_001.png" id="20_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north-east/frame_002.png" id="21_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north-east/frame_003.png" id="22_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north-east/frame_004.png" id="23_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north-east/frame_005.png" id="24_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north/frame_000.png" id="25_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north/frame_001.png" id="26_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north/frame_002.png" id="27_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north/frame_003.png" id="28_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north/frame_004.png" id="29_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north/frame_005.png" id="30_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north-west/frame_000.png" id="31_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north-west/frame_001.png" id="32_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north-west/frame_002.png" id="33_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north-west/frame_003.png" id="34_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north-west/frame_004.png" id="35_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/north-west/frame_005.png" id="36_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/west/frame_000.png" id="37_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/west/frame_001.png" id="38_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/west/frame_002.png" id="39_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/west/frame_003.png" id="40_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/west/frame_004.png" id="41_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/west/frame_005.png" id="42_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south-west/frame_000.png" id="43_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south-west/frame_001.png" id="44_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south-west/frame_002.png" id="45_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south-west/frame_003.png" id="46_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south-west/frame_004.png" id="47_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/walk/animations/walk/south-west/frame_005.png" id="48_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/Idle/animations/Breathing_Idle-2e7cd0e8/south/frame_000.png" id="49_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/Idle/animations/Breathing_Idle-2e7cd0e8/south/frame_001.png" id="50_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/Idle/animations/Breathing_Idle-2e7cd0e8/south/frame_002.png" id="51_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/Idle/animations/Breathing_Idle-2e7cd0e8/south/frame_003.png" id="52_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/Idle/rotations/south-east.png" id="53_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/Idle/rotations/east.png" id="54_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/Idle/rotations/north-east.png" id="55_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/Idle/rotations/north.png" id="56_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/Idle/rotations/north-west.png" id="57_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/Idle/rotations/west.png" id="58_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/Idle/rotations/south-west.png" id="59_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-left/frame_000.png" id="60_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-left/frame_001.png" id="61_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-left/frame_002.png" id="62_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-left/frame_003.png" id="63_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-left/frame_004.png" id="64_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-left/frame_005.png" id="65_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-left/frame_006.png" id="66_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-right/frame_000.png" id="67_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-right/frame_001.png" id="68_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-right/frame_002.png" id="69_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-right/frame_003.png" id="70_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-right/frame_004.png" id="71_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-right/frame_005.png" id="72_f"]
+[ext_resource type="Texture2D" path="res://Assets/blue-ninja/punch/animations/punch/punch-right/frame_006.png" id="73_f"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f")
+}],
+"loop": true,
+"name": &"walk_south",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_f")
+}],
+"loop": true,
+"name": &"walk_south_east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_f")
+}],
+"loop": true,
+"name": &"walk_east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_f")
+}],
+"loop": true,
+"name": &"walk_north_east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_f")
+}],
+"loop": true,
+"name": &"walk_north",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_f")
+}],
+"loop": true,
+"name": &"walk_north_west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_f")
+}],
+"loop": true,
+"name": &"walk_west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("43_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_f")
+}],
+"loop": true,
+"name": &"walk_south_west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("49_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_f")
+}],
+"loop": true,
+"name": &"idle_south",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("53_f")
+}],
+"loop": true,
+"name": &"idle_south_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("54_f")
+}],
+"loop": true,
+"name": &"idle_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("55_f")
+}],
+"loop": true,
+"name": &"idle_north_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_f")
+}],
+"loop": true,
+"name": &"idle_north",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("57_f")
+}],
+"loop": true,
+"name": &"idle_north_west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("58_f")
+}],
+"loop": true,
+"name": &"idle_west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("59_f")
+}],
+"loop": true,
+"name": &"idle_south_west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("60_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_f")
+}],
+"loop": false,
+"name": &"punch_left",
+"speed": 14.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("67_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_f")
+}],
+"loop": false,
+"name": &"punch_right",
+"speed": 14.0
+}]

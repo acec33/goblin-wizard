@@ -1,0 +1,237 @@
+{
+  "group_id": "98a1b8dc-c827-40a0-b09e-16f748b6943d",
+  "states": [
+    {
+      "character": {
+        "id": "d797209c-948c-48e6-b399-de27cfefb189",
+        "name": "ninja wearing a blue gi",
+        "prompt": "ninja wearing a blue gi with a good and a black belt",
+        "size": {
+          "width": 236,
+          "height": 236
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-05-24T03:52:56.339898+00:00"
+      },
+      "folder": "ninja_wearing_a_blue_gi",
+      "frames": {
+        "rotations": {
+          "south": "ninja_wearing_a_blue_gi/rotations/south.png",
+          "south-east": "ninja_wearing_a_blue_gi/rotations/south-east.png",
+          "east": "ninja_wearing_a_blue_gi/rotations/east.png",
+          "north-east": "ninja_wearing_a_blue_gi/rotations/north-east.png",
+          "north": "ninja_wearing_a_blue_gi/rotations/north.png",
+          "north-west": "ninja_wearing_a_blue_gi/rotations/north-west.png",
+          "west": "ninja_wearing_a_blue_gi/rotations/west.png",
+          "south-west": "ninja_wearing_a_blue_gi/rotations/south-west.png"
+        },
+        "animations": {
+          "Breathing_Idle-2e7cd0e8": {
+            "south": [
+              "ninja_wearing_a_blue_gi/animations/Breathing_Idle-2e7cd0e8/south/frame_000.png",
+              "ninja_wearing_a_blue_gi/animations/Breathing_Idle-2e7cd0e8/south/frame_001.png",
+              "ninja_wearing_a_blue_gi/animations/Breathing_Idle-2e7cd0e8/south/frame_002.png",
+              "ninja_wearing_a_blue_gi/animations/Breathing_Idle-2e7cd0e8/south/frame_003.png"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "character": {
+        "id": "1944a3b2-4eea-4eb3-a2ef-e4a400dededc",
+        "name": "mid-walk",
+        "prompt": "ninja wearing a blue gi with a good and a black belt",
+        "size": {
+          "width": 236,
+          "height": 236
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-05-24T04:00:23.664646+00:00"
+      },
+      "folder": "mid-walk",
+      "frames": {
+        "rotations": {
+          "south": "mid-walk/rotations/south.png",
+          "south-east": "mid-walk/rotations/south-east.png",
+          "east": "mid-walk/rotations/east.png",
+          "north-east": "mid-walk/rotations/north-east.png",
+          "north": "mid-walk/rotations/north.png",
+          "north-west": "mid-walk/rotations/north-west.png",
+          "west": "mid-walk/rotations/west.png",
+          "south-west": "mid-walk/rotations/south-west.png"
+        },
+        "animations": {
+          "animation-b96cc471": {
+            "south-east": [
+              "mid-walk/animations/animation-b96cc471/south-east/frame_000.png",
+              "mid-walk/animations/animation-b96cc471/south-east/frame_001.png",
+              "mid-walk/animations/animation-b96cc471/south-east/frame_002.png",
+              "mid-walk/animations/animation-b96cc471/south-east/frame_003.png",
+              "mid-walk/animations/animation-b96cc471/south-east/frame_004.png",
+              "mid-walk/animations/animation-b96cc471/south-east/frame_005.png"
+            ],
+            "west": [
+              "mid-walk/animations/animation-b96cc471/west/frame_000.png",
+              "mid-walk/animations/animation-b96cc471/west/frame_001.png",
+              "mid-walk/animations/animation-b96cc471/west/frame_002.png",
+              "mid-walk/animations/animation-b96cc471/west/frame_003.png",
+              "mid-walk/animations/animation-b96cc471/west/frame_004.png",
+              "mid-walk/animations/animation-b96cc471/west/frame_005.png"
+            ],
+            "south": [
+              "mid-walk/animations/animation-b96cc471/south/frame_000.png",
+              "mid-walk/animations/animation-b96cc471/south/frame_001.png",
+              "mid-walk/animations/animation-b96cc471/south/frame_002.png",
+              "mid-walk/animations/animation-b96cc471/south/frame_003.png",
+              "mid-walk/animations/animation-b96cc471/south/frame_004.png",
+              "mid-walk/animations/animation-b96cc471/south/frame_005.png"
+            ],
+            "south-west": [
+              "mid-walk/animations/animation-b96cc471/south-west/frame_000.png",
+              "mid-walk/animations/animation-b96cc471/south-west/frame_001.png",
+              "mid-walk/animations/animation-b96cc471/south-west/frame_002.png",
+              "mid-walk/animations/animation-b96cc471/south-west/frame_003.png",
+              "mid-walk/animations/animation-b96cc471/south-west/frame_004.png",
+              "mid-walk/animations/animation-b96cc471/south-west/frame_005.png"
+            ],
+            "north-west": [
+              "mid-walk/animations/animation-b96cc471/north-west/frame_000.png",
+              "mid-walk/animations/animation-b96cc471/north-west/frame_001.png",
+              "mid-walk/animations/animation-b96cc471/north-west/frame_002.png",
+              "mid-walk/animations/animation-b96cc471/north-west/frame_003.png",
+              "mid-walk/animations/animation-b96cc471/north-west/frame_004.png",
+              "mid-walk/animations/animation-b96cc471/north-west/frame_005.png"
+            ],
+            "north-east": [
+              "mid-walk/animations/animation-b96cc471/north-east/frame_000.png",
+              "mid-walk/animations/animation-b96cc471/north-east/frame_001.png",
+              "mid-walk/animations/animation-b96cc471/north-east/frame_002.png",
+              "mid-walk/animations/animation-b96cc471/north-east/frame_003.png",
+              "mid-walk/animations/animation-b96cc471/north-east/frame_004.png",
+              "mid-walk/animations/animation-b96cc471/north-east/frame_005.png"
+            ]
+          },
+          "animation-d7ece497": {
+            "north": [
+              "mid-walk/animations/animation-d7ece497/north/frame_000.png",
+              "mid-walk/animations/animation-d7ece497/north/frame_001.png",
+              "mid-walk/animations/animation-d7ece497/north/frame_002.png",
+              "mid-walk/animations/animation-d7ece497/north/frame_003.png",
+              "mid-walk/animations/animation-d7ece497/north/frame_004.png",
+              "mid-walk/animations/animation-d7ece497/north/frame_005.png"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "character": {
+        "id": "454e29fc-b9ce-4b51-af3f-8a1f7778d5df",
+        "name": "mid-punch, right han",
+        "prompt": "ninja wearing a blue gi with a good and a black belt",
+        "size": {
+          "width": 236,
+          "height": 236
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-05-24T04:17:03.901882+00:00"
+      },
+      "folder": "mid-punch_right_han",
+      "frames": {
+        "rotations": {
+          "south": "mid-punch_right_han/rotations/south.png",
+          "south-east": "mid-punch_right_han/rotations/south-east.png",
+          "east": "mid-punch_right_han/rotations/east.png",
+          "north-east": "mid-punch_right_han/rotations/north-east.png",
+          "north": "mid-punch_right_han/rotations/north.png",
+          "north-west": "mid-punch_right_han/rotations/north-west.png",
+          "west": "mid-punch_right_han/rotations/west.png",
+          "south-west": "mid-punch_right_han/rotations/south-west.png"
+        },
+        "animations": {
+          "The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3": {
+            "south-east": [
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south-east/frame_000.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south-east/frame_001.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south-east/frame_002.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south-east/frame_003.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south-east/frame_004.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south-east/frame_005.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south-east/frame_006.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south-east/frame_007.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south-east/frame_008.png"
+            ],
+            "south": [
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south/frame_000.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south/frame_001.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south/frame_002.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south/frame_003.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south/frame_004.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south/frame_005.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south/frame_006.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south/frame_007.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/south/frame_008.png"
+            ],
+            "north-west": [
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/north-west/frame_000.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/north-west/frame_001.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/north-west/frame_002.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/north-west/frame_003.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/north-west/frame_004.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/north-west/frame_005.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/north-west/frame_006.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/north-west/frame_007.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-d157a9f3/north-west/frame_008.png"
+            ]
+          },
+          "The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8": {
+            "east": [
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/east/frame_000.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/east/frame_001.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/east/frame_002.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/east/frame_003.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/east/frame_004.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/east/frame_005.png"
+            ],
+            "south-west": [
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-west/frame_000.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-west/frame_001.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-west/frame_002.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-west/frame_003.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-west/frame_004.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-west/frame_005.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-west/frame_006.png"
+            ],
+            "south-east": [
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-east/frame_000.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-east/frame_001.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-east/frame_002.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-east/frame_003.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-east/frame_004.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-east/frame_005.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south-east/frame_006.png"
+            ],
+            "south": [
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south/frame_000.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south/frame_001.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south/frame_002.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south/frame_003.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south/frame_004.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south/frame_005.png",
+              "mid-punch_right_han/animations/The_martial_artist_shifts_his_weight_slightly_forw-a06eb5c8/south/frame_006.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.0",
+  "export_date": "2026-05-24T05:59:00.756731"
+}

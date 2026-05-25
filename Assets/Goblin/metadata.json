@@ -1,0 +1,336 @@
+{
+  "group_id": "3b97e6d7-a55d-4f43-8cf9-6c11d07be621",
+  "states": [
+    {
+      "character": {
+        "id": "39dd6db4-3b18-4e02-a08b-59f528dc664a",
+        "name": "idle",
+        "prompt": "green goblin with no shirt, red suspenders, and brown shorts. he's holding a small upright dagger. He has a bald green head.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-05-22T20:17:25.067936+00:00"
+      },
+      "folder": "39dd6db4",
+      "frames": {
+        "rotations": {
+          "south": "39dd6db4/rotations/south.png",
+          "south-east": "39dd6db4/rotations/south-east.png",
+          "east": "39dd6db4/rotations/east.png",
+          "north-east": "39dd6db4/rotations/north-east.png",
+          "north": "39dd6db4/rotations/north.png",
+          "north-west": "39dd6db4/rotations/north-west.png",
+          "west": "39dd6db4/rotations/west.png",
+          "south-west": "39dd6db4/rotations/south-west.png"
+        },
+        "animations": {
+          "Running_holding_dagger_in_hand-e04e0cc8": {
+            "south-east": [
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/south-east/frame_000.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/south-east/frame_001.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/south-east/frame_002.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/south-east/frame_003.png"
+            ],
+            "east": [
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/east/frame_000.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/east/frame_001.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/east/frame_002.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/east/frame_003.png"
+            ],
+            "south-west": [
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/south-west/frame_000.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/south-west/frame_001.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/south-west/frame_002.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/south-west/frame_003.png"
+            ],
+            "south": [
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/south/frame_000.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/south/frame_001.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/south/frame_002.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/south/frame_003.png"
+            ],
+            "north-west-5df4b3cf": [
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north-west-5df4b3cf/frame_000.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north-west-5df4b3cf/frame_001.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north-west-5df4b3cf/frame_002.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north-west-5df4b3cf/frame_003.png"
+            ],
+            "north-east": [
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north-east/frame_000.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north-east/frame_001.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north-east/frame_002.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north-east/frame_003.png"
+            ],
+            "north": [
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north/frame_000.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north/frame_001.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north/frame_002.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north/frame_003.png"
+            ],
+            "north-west-e5a67629": [
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north-west-e5a67629/frame_000.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north-west-e5a67629/frame_001.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north-west-e5a67629/frame_002.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/north-west-e5a67629/frame_003.png"
+            ],
+            "west": [
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/west/frame_000.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/west/frame_001.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/west/frame_002.png",
+              "39dd6db4/animations/Running_holding_dagger_in_hand-e04e0cc8/west/frame_003.png"
+            ]
+          },
+          "stab_forward_with_dagger-bdac5cc0": {
+            "south": [
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/south/frame_000.png",
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/south/frame_001.png",
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/south/frame_002.png",
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/south/frame_003.png"
+            ],
+            "west": [
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/west/frame_000.png",
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/west/frame_001.png",
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/west/frame_002.png",
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/west/frame_003.png"
+            ],
+            "north": [
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/north/frame_000.png",
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/north/frame_001.png",
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/north/frame_002.png",
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/north/frame_003.png"
+            ],
+            "east": [
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/east/frame_000.png",
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/east/frame_001.png",
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/east/frame_002.png",
+              "39dd6db4/animations/stab_forward_with_dagger-bdac5cc0/east/frame_003.png"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "character": {
+        "id": "cd1bd169-cb64-49bf-a238-26007e43d736",
+        "name": "run",
+        "prompt": "green goblin with no shirt, red suspenders, and brown shorts. he's holding a small upright dagger. He has a bald green head.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-05-24T04:05:20.197083+00:00"
+      },
+      "folder": "cd1bd169",
+      "frames": {
+        "rotations": {
+          "south": "cd1bd169/rotations/south.png",
+          "south-east": "cd1bd169/rotations/south-east.png",
+          "east": "cd1bd169/rotations/east.png",
+          "north-east": "cd1bd169/rotations/north-east.png",
+          "north": "cd1bd169/rotations/north.png",
+          "north-west": "cd1bd169/rotations/north-west.png",
+          "west": "cd1bd169/rotations/west.png",
+          "south-west": "cd1bd169/rotations/south-west.png"
+        },
+        "animations": {
+          "Running-1ba879ad": {
+            "east": [
+              "cd1bd169/animations/Running-1ba879ad/east/frame_000.png",
+              "cd1bd169/animations/Running-1ba879ad/east/frame_001.png",
+              "cd1bd169/animations/Running-1ba879ad/east/frame_002.png",
+              "cd1bd169/animations/Running-1ba879ad/east/frame_003.png"
+            ],
+            "north-west": [
+              "cd1bd169/animations/Running-1ba879ad/north-west/frame_000.png",
+              "cd1bd169/animations/Running-1ba879ad/north-west/frame_001.png",
+              "cd1bd169/animations/Running-1ba879ad/north-west/frame_002.png",
+              "cd1bd169/animations/Running-1ba879ad/north-west/frame_003.png"
+            ],
+            "south-east": [
+              "cd1bd169/animations/Running-1ba879ad/south-east/frame_000.png",
+              "cd1bd169/animations/Running-1ba879ad/south-east/frame_001.png",
+              "cd1bd169/animations/Running-1ba879ad/south-east/frame_002.png",
+              "cd1bd169/animations/Running-1ba879ad/south-east/frame_003.png"
+            ],
+            "south-west": [
+              "cd1bd169/animations/Running-1ba879ad/south-west/frame_000.png",
+              "cd1bd169/animations/Running-1ba879ad/south-west/frame_001.png",
+              "cd1bd169/animations/Running-1ba879ad/south-west/frame_002.png",
+              "cd1bd169/animations/Running-1ba879ad/south-west/frame_003.png"
+            ],
+            "west": [
+              "cd1bd169/animations/Running-1ba879ad/west/frame_000.png",
+              "cd1bd169/animations/Running-1ba879ad/west/frame_001.png",
+              "cd1bd169/animations/Running-1ba879ad/west/frame_002.png",
+              "cd1bd169/animations/Running-1ba879ad/west/frame_003.png"
+            ],
+            "north-east": [
+              "cd1bd169/animations/Running-1ba879ad/north-east/frame_000.png",
+              "cd1bd169/animations/Running-1ba879ad/north-east/frame_001.png",
+              "cd1bd169/animations/Running-1ba879ad/north-east/frame_002.png",
+              "cd1bd169/animations/Running-1ba879ad/north-east/frame_003.png"
+            ],
+            "north": [
+              "cd1bd169/animations/Running-1ba879ad/north/frame_000.png",
+              "cd1bd169/animations/Running-1ba879ad/north/frame_001.png",
+              "cd1bd169/animations/Running-1ba879ad/north/frame_002.png",
+              "cd1bd169/animations/Running-1ba879ad/north/frame_003.png"
+            ],
+            "south": [
+              "cd1bd169/animations/Running-1ba879ad/south/frame_000.png",
+              "cd1bd169/animations/Running-1ba879ad/south/frame_001.png",
+              "cd1bd169/animations/Running-1ba879ad/south/frame_002.png",
+              "cd1bd169/animations/Running-1ba879ad/south/frame_003.png"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "character": {
+        "id": "8462a913-e049-451c-9ead-ce8adf3991fe",
+        "name": "slash attack",
+        "prompt": "green goblin with no shirt, red suspenders, and brown shorts. he's holding a small upright dagger. He has a bald green head.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-05-24T04:28:52.437091+00:00"
+      },
+      "folder": "slash_attack",
+      "frames": {
+        "rotations": {
+          "south": "slash_attack/rotations/south.png",
+          "south-east": "slash_attack/rotations/south-east.png",
+          "east": "slash_attack/rotations/east.png",
+          "north-east": "slash_attack/rotations/north-east.png",
+          "north": "slash_attack/rotations/north.png",
+          "north-west": "slash_attack/rotations/north-west.png",
+          "west": "slash_attack/rotations/west.png",
+          "south-west": "slash_attack/rotations/south-west.png"
+        },
+        "animations": {
+          "The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5": {
+            "south": [
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south/frame_000.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south/frame_001.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south/frame_002.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south/frame_003.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south/frame_004.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south/frame_005.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south/frame_006.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south/frame_007.png"
+            ],
+            "south-east": [
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south-east/frame_000.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south-east/frame_001.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south-east/frame_002.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south-east/frame_003.png"
+            ],
+            "south-west": [
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south-west/frame_000.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south-west/frame_001.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south-west/frame_002.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/south-west/frame_003.png"
+            ],
+            "east": [
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/east/frame_000.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/east/frame_001.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/east/frame_002.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/east/frame_003.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/east/frame_004.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/east/frame_005.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/east/frame_006.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-013834b5/east/frame_007.png"
+            ]
+          },
+          "The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70": {
+            "east": [
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/east/frame_000.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/east/frame_001.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/east/frame_002.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/east/frame_003.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/east/frame_004.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/east/frame_005.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/east/frame_006.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/east/frame_007.png"
+            ],
+            "south-east": [
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south-east/frame_000.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south-east/frame_001.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south-east/frame_002.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south-east/frame_003.png"
+            ],
+            "south": [
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south/frame_000.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south/frame_001.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south/frame_002.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south/frame_003.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south/frame_004.png"
+            ],
+            "south-west": [
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south-west/frame_000.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south-west/frame_001.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south-west/frame_002.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/south-west/frame_003.png"
+            ],
+            "west": [
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/west/frame_000.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/west/frame_001.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/west/frame_002.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/west/frame_003.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/west/frame_004.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/west/frame_005.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/west/frame_006.png",
+              "slash_attack/animations/The_goblin_lunges_forward_slightly_as_it_swings_it-fb0f6e70/west/frame_007.png"
+            ]
+          },
+          "one-handed_horizontal_dagger_slash_attack-26e804b2": {
+            "north-west": [
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/north-west/frame_000.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/north-west/frame_001.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/north-west/frame_002.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/north-west/frame_003.png"
+            ],
+            "north": [
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/north/frame_000.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/north/frame_001.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/north/frame_002.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/north/frame_003.png"
+            ],
+            "north-east": [
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/north-east/frame_000.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/north-east/frame_001.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/north-east/frame_002.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/north-east/frame_003.png"
+            ],
+            "south-west": [
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/south-west/frame_000.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/south-west/frame_001.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/south-west/frame_002.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/south-west/frame_003.png"
+            ],
+            "south-east": [
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/south-east/frame_000.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/south-east/frame_001.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/south-east/frame_002.png",
+              "slash_attack/animations/one-handed_horizontal_dagger_slash_attack-26e804b2/south-east/frame_003.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.0",
+  "export_date": "2026-05-24T19:16:37.525303"
+}

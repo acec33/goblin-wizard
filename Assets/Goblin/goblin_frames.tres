@@ -1,0 +1,880 @@
+[gd_resource type="SpriteFrames" load_steps=166 format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/south/frame_000.png" id="1_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/south/frame_001.png" id="2_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/south/frame_002.png" id="3_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/south/frame_003.png" id="4_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/south/frame_000.png" id="5_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/south/frame_001.png" id="6_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/south/frame_002.png" id="7_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/south/frame_003.png" id="8_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/south-east/frame_000.png" id="9_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/south-east/frame_001.png" id="10_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/south-east/frame_002.png" id="11_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/south-east/frame_003.png" id="12_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/south-east/frame_000.png" id="13_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/south-east/frame_001.png" id="14_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/south-east/frame_002.png" id="15_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/south-east/frame_003.png" id="16_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/east/frame_000.png" id="17_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/east/frame_001.png" id="18_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/east/frame_002.png" id="19_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/east/frame_003.png" id="20_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/east/frame_000.png" id="21_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/east/frame_001.png" id="22_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/east/frame_002.png" id="23_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/east/frame_003.png" id="24_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/north-east/frame_000.png" id="25_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/north-east/frame_001.png" id="26_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/north-east/frame_002.png" id="27_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/north-east/frame_003.png" id="28_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north-east/frame_000.png" id="29_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north-east/frame_001.png" id="30_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north-east/frame_002.png" id="31_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north-east/frame_003.png" id="32_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/north/frame_000.png" id="33_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/north/frame_001.png" id="34_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/north/frame_002.png" id="35_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/north/frame_003.png" id="36_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north/frame_000.png" id="37_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north/frame_001.png" id="38_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north/frame_002.png" id="39_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north/frame_003.png" id="40_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/north-west/frame_000.png" id="41_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/north-west/frame_001.png" id="42_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/north-west/frame_002.png" id="43_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/north-west/frame_003.png" id="44_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north-west-5df4b3cf/frame_000.png" id="45_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north-west-5df4b3cf/frame_001.png" id="46_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north-west-5df4b3cf/frame_002.png" id="47_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north-west-5df4b3cf/frame_003.png" id="48_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north-west-e5a67629/frame_000.png" id="49_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north-west-e5a67629/frame_001.png" id="50_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north-west-e5a67629/frame_002.png" id="51_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/north-west-e5a67629/frame_003.png" id="52_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/west/frame_000.png" id="53_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/west/frame_001.png" id="54_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/west/frame_002.png" id="55_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/west/frame_003.png" id="56_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/west/frame_000.png" id="57_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/west/frame_001.png" id="58_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/west/frame_002.png" id="59_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/west/frame_003.png" id="60_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/south-west/frame_000.png" id="61_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/south-west/frame_001.png" id="62_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/south-west/frame_002.png" id="63_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/animations/Running-1ba879ad/south-west/frame_003.png" id="64_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/south-west/frame_000.png" id="65_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/south-west/frame_001.png" id="66_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/south-west/frame_002.png" id="67_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running_alt/south-west/frame_003.png" id="68_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south/frame_000.png" id="69_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south/frame_001.png" id="70_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south/frame_002.png" id="71_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south/frame_003.png" id="72_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south/frame_004.png" id="73_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south/frame_005.png" id="74_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south/frame_006.png" id="75_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south/frame_007.png" id="76_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south2/frame_000.png" id="77_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south2/frame_001.png" id="78_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south2/frame_002.png" id="79_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south2/frame_003.png" id="80_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south2/frame_004.png" id="81_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south3/frame_000.png" id="82_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south3/frame_001.png" id="83_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south3/frame_002.png" id="84_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south3/frame_003.png" id="85_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-east/frame_000.png" id="86_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-east/frame_001.png" id="87_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-east/frame_002.png" id="88_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-east/frame_003.png" id="89_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-east2/frame_000.png" id="90_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-east2/frame_001.png" id="91_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-east2/frame_002.png" id="92_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-east2/frame_003.png" id="93_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-east3/frame_000.png" id="94_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-east3/frame_001.png" id="95_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-east3/frame_002.png" id="96_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-east3/frame_003.png" id="97_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east/frame_000.png" id="98_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east/frame_001.png" id="99_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east/frame_002.png" id="100_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east/frame_003.png" id="101_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east/frame_004.png" id="102_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east/frame_005.png" id="103_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east/frame_006.png" id="104_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east/frame_007.png" id="105_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east2/frame_000.png" id="106_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east2/frame_001.png" id="107_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east2/frame_002.png" id="108_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east2/frame_003.png" id="109_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east2/frame_004.png" id="110_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east2/frame_005.png" id="111_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east2/frame_006.png" id="112_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east2/frame_007.png" id="113_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east3/frame_000.png" id="114_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east3/frame_001.png" id="115_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east3/frame_002.png" id="116_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/east3/frame_003.png" id="117_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north-east/frame_000.png" id="118_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north-east/frame_001.png" id="119_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north-east/frame_002.png" id="120_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north-east/frame_003.png" id="121_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north/frame_000.png" id="122_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north/frame_001.png" id="123_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north/frame_002.png" id="124_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north/frame_003.png" id="125_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north2/frame_000.png" id="126_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north2/frame_001.png" id="127_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north2/frame_002.png" id="128_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north2/frame_003.png" id="129_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north-west/frame_000.png" id="130_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north-west/frame_001.png" id="131_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north-west/frame_002.png" id="132_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/north-west/frame_003.png" id="133_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/west/frame_000.png" id="134_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/west/frame_001.png" id="135_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/west/frame_002.png" id="136_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/west/frame_003.png" id="137_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/west2/frame_000.png" id="138_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/west2/frame_001.png" id="139_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/west2/frame_002.png" id="140_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/west2/frame_003.png" id="141_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/west2/frame_004.png" id="142_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/west2/frame_005.png" id="143_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/west2/frame_006.png" id="144_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/west2/frame_007.png" id="145_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-west/frame_000.png" id="146_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-west/frame_001.png" id="147_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-west/frame_002.png" id="148_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-west/frame_003.png" id="149_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-west2/frame_000.png" id="150_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-west2/frame_001.png" id="151_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-west2/frame_002.png" id="152_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-west2/frame_003.png" id="153_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-west3/frame_000.png" id="154_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-west3/frame_001.png" id="155_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-west3/frame_002.png" id="156_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/slash_attack/animations/south-west3/frame_003.png" id="157_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/rotations/south.png" id="158_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/rotations/south-east.png" id="159_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/rotations/east.png" id="160_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/rotations/north-east.png" id="161_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/rotations/north.png" id="162_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/rotations/north-west.png" id="163_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/rotations/west.png" id="164_f"]
+[ext_resource type="Texture2D" path="res://Assets/Goblin/running/rotations/south-west.png" id="165_f"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f")
+}],
+"loop": true,
+"name": &"run_south_0",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_f")
+}],
+"loop": true,
+"name": &"run_south_1",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_f")
+}],
+"loop": true,
+"name": &"run_south_east_0",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_f")
+}],
+"loop": true,
+"name": &"run_south_east_1",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_f")
+}],
+"loop": true,
+"name": &"run_east_0",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_f")
+}],
+"loop": true,
+"name": &"run_east_1",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_f")
+}],
+"loop": true,
+"name": &"run_north_east_0",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_f")
+}],
+"loop": true,
+"name": &"run_north_east_1",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_f")
+}],
+"loop": true,
+"name": &"run_north_0",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_f")
+}],
+"loop": true,
+"name": &"run_north_1",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_f")
+}],
+"loop": true,
+"name": &"run_north_west_0",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_f")
+}],
+"loop": true,
+"name": &"run_north_west_1",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("49_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_f")
+}],
+"loop": true,
+"name": &"run_north_west_2",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("53_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_f")
+}],
+"loop": true,
+"name": &"run_west_0",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("57_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_f")
+}],
+"loop": true,
+"name": &"run_west_1",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("61_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_f")
+}],
+"loop": true,
+"name": &"run_south_west_0",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("65_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_f")
+}],
+"loop": true,
+"name": &"run_south_west_1",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("69_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_f")
+}],
+"loop": false,
+"name": &"slash_south_0",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("77_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_f")
+}],
+"loop": false,
+"name": &"slash_south_1",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("82_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_f")
+}],
+"loop": false,
+"name": &"slash_south_2",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("86_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_f")
+}],
+"loop": false,
+"name": &"slash_south_east_0",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("90_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_f")
+}],
+"loop": false,
+"name": &"slash_south_east_1",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("94_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_f")
+}],
+"loop": false,
+"name": &"slash_south_east_2",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("98_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_f")
+}],
+"loop": false,
+"name": &"slash_east_0",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("106_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_f")
+}],
+"loop": false,
+"name": &"slash_east_1",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("114_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_f")
+}],
+"loop": false,
+"name": &"slash_east_2",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("118_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_f")
+}],
+"loop": false,
+"name": &"slash_north_east_0",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("122_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_f")
+}],
+"loop": false,
+"name": &"slash_north_0",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("126_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_f")
+}],
+"loop": false,
+"name": &"slash_north_1",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("130_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_f")
+}],
+"loop": false,
+"name": &"slash_north_west_0",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("134_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_f")
+}],
+"loop": false,
+"name": &"slash_west_0",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("138_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_f")
+}],
+"loop": false,
+"name": &"slash_west_1",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("146_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_f")
+}],
+"loop": false,
+"name": &"slash_south_west_0",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("150_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_f")
+}],
+"loop": false,
+"name": &"slash_south_west_1",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("154_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_f")
+}],
+"loop": false,
+"name": &"slash_south_west_2",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("158_f")
+}],
+"loop": true,
+"name": &"idle_south",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("159_f")
+}],
+"loop": true,
+"name": &"idle_south_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("160_f")
+}],
+"loop": true,
+"name": &"idle_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("161_f")
+}],
+"loop": true,
+"name": &"idle_north_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("162_f")
+}],
+"loop": true,
+"name": &"idle_north",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("163_f")
+}],
+"loop": true,
+"name": &"idle_north_west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("164_f")
+}],
+"loop": true,
+"name": &"idle_west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("165_f")
+}],
+"loop": true,
+"name": &"idle_south_west",
+"speed": 5.0
+}]

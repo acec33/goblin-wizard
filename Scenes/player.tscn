@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d38qbjs5ketbi"]
+
+[ext_resource type="Script" uid="uid://deuhtls0ktdxm" path="res://Scripts/player.gd" id="1_player"]
+[ext_resource type="SpriteFrames" path="res://Assets/blue-ninja/blue_ninja_frames.tres" id="2_frames"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_player"]
+radius = 18.0
+
+[node name="Player" type="CharacterBody2D" unique_id=612717383]
+script = ExtResource("1_player")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1898564321]
+shape = SubResource("CircleShape2D_player")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1420707782]
+scale = Vector2(0.22, 0.22)
+sprite_frames = ExtResource("2_frames")
+animation = &"idle_south"
+autoplay = "idle_south"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1414588628]
+zoom = Vector2(3, 3)

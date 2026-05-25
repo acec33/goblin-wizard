@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/evanchambers/.local/bin/**)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//Applications/**)",
+      "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --path /Users/evanchambers/Godot/PROJECTS/goblin-wizard --quit-after 30)",
+      "Bash(grep -v -E \"Vulkan|OpenGL|Godot Engine|https://|free the address|TextServer|^\\\\s*$\")",
+      "Bash(echo \"--- project .claude ---\"; ls -la .claude 2>&1; echo \"--- root CLAUDE.md? ---\"; ls -la CLAUDE.md 2>&1; echo \"--- user CLAUDE.md? ---\"; ls -la ~/.claude/CLAUDE.md 2>&1)",
+      "Bash(python3 /tmp/gen_frames.py)",
+      "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --import)",
+      "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --path /Users/evanchambers/Godot/PROJECTS/goblin-wizard --quit-after 60)",
+      "Bash(sips -g pixelWidth -g pixelHeight \"Assets/Goblin/running/animations/Running-1ba879ad/south/frame_000.png\")",
+      "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --path /Users/evanchambers/Godot/PROJECTS/goblin-wizard --quit-after 90)"
+    ]
+  }
+}
