@@ -11,9 +11,11 @@ enum State { RUN, ATTACK, IDLE }
 @export var move_speed: float = 115.0
 @export var max_health: int = 30
 @export var contact_damage: int = 10
-@export var contact_range: float = 40.0
+@export var contact_range: float = 105.0      # tuned for the 2x sprite/collision scale
 @export var attack_cooldown: float = 1.2
-@export var knockback_decay: float = 1600.0   # how fast a shove bleeds off (px/sec^2)
+@export var knockback_decay: float = 3000.0   # tuned for the 2x scale (keeps shove distance similar)
+@export var max_chase_distance: float = 1500.0  # if the player outruns us by more than this, teleport closer
+@export var respawn_distance: float = 700.0     # where to drop us when recycled (off-screen but reachable)
 
 # 8 direction names by 45-degree steps from east, clockwise (screen Y is down).
 const DIR_NAMES := ["east", "south_east", "south", "south_west", "west", "north_west", "north", "north_east"]
@@ -61,6 +63,15 @@ func _physics_process(delta: float) -> void:
 
 	if _player == null or not is_instance_valid(_player):
 		_find_player()
+
+	# Laggard recycle: if the player has run too far away, drop us at a fresh
+	# spawn point near them. Otherwise outrun goblins stay stranded forever and
+	# waves never finish.
+	if _player != null and is_instance_valid(_player):
+		if global_position.distance_to(_player.global_position) > max_chase_distance:
+			var angle := randf() * TAU
+			global_position = _player.global_position + Vector2.RIGHT.rotated(angle) * respawn_distance
+			_knockback = Vector2.ZERO
 
 	# Mid-slash: hold and let the swing finish (knockback can still shove it).
 	if _state == State.ATTACK:
@@ -119,6 +130,9 @@ func take_damage(amount: int, knockback: Vector2 = Vector2.ZERO) -> void:
 	health = maxi(0, health - amount)
 	_knockback = knockback
 	_flash()
+	# Announce on the global bus. ComboManager (or anything else) listens.
+	# Harmless when no one is subscribed.
+	Events.entity_hit.emit(amount, global_position, knockback, self)
 	if health == 0:
 		_die()
 

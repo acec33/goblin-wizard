@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://csmenu1ub1n01"]
+
+[ext_resource type="Script" uid="uid://be0l0xe45d3p2" path="res://Scripts/start_menu.gd" id="1_start_menu"]
+[ext_resource type="PackedScene" uid="uid://dd56a874us8na" path="res://Scenes/exit_warning.tscn" id="2_exit_warning"]
+
+[node name="StartMenu" type="Control" unique_id=695517838]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_start_menu")
+
+[node name="Bg" type="ColorRect" parent="." unique_id=831807429]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09, 0.1, 0.13, 1)
+
+[node name="CenterBox" type="CenterContainer" parent="." unique_id=774025103]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="CenterBox" unique_id=1484925014]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="Title" type="Label" parent="CenterBox/VBox" unique_id=2127784540]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 56
+text = "GOBLIN WIZARD"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="CenterBox/VBox" unique_id=830449908]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+
+[node name="StartButton" type="Button" parent="CenterBox/VBox" unique_id=446607227]
+custom_minimum_size = Vector2(280, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Start"
+
+[node name="TrainingButton" type="Button" parent="CenterBox/VBox" unique_id=2131651221]
+custom_minimum_size = Vector2(280, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Training"
+
+[node name="OptionsButton" type="Button" parent="CenterBox/VBox" unique_id=1912699603]
+custom_minimum_size = Vector2(280, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Options"
+
+[node name="QuitButton" type="Button" parent="CenterBox/VBox" unique_id=1198510315]
+custom_minimum_size = Vector2(280, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Quit to Desktop"
+
+[node name="Status" type="Label" parent="CenterBox/VBox" unique_id=152011865]
+custom_minimum_size = Vector2(280, 28)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+
+[node name="ExitWarning" parent="." unique_id=1631659736 instance=ExtResource("2_exit_warning")]
+visible = false
+layout_mode = 1

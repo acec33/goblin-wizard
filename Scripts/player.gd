@@ -9,18 +9,33 @@ signal died
 enum State { IDLE, WALK, PUNCH }
 
 @export var move_speed: float = 240.0
+@export var walk_threshold: float = 0.6        # analog magnitude below this only aims (no walk)
 @export var max_health: int = 100
 @export var attack_damage: int = 25
-@export var attack_range: float = 95.0
+@export var attack_range: float = 200.0       # tuned for the 2x sprite/collision scale
 @export var attack_arc_degrees: float = 130.0
 @export var attack_cooldown: float = 0.45
-@export var knockback_force: float = 520.0
+@export var post_attack_lockout: float = 0.08  # seconds after a punch before walking can resume
+@export var knockback_force: float = 1100.0    # tuned for the 2x sprite/collision scale
 
 @export_group("Game feel")
 @export var hit_stop_duration: float = 0.06   # seconds of freeze on a landed punch
 @export var shake_per_hit: float = 0.45       # trauma added per landed punch (0..1)
 @export var shake_max_offset: float = 8.0     # max camera jitter in pixels
 @export var shake_decay: float = 4.0          # how fast the shake settles
+
+@export_group("Rumble")
+@export var rumble_enabled: bool = true
+@export_range(0.0, 1.0) var rumble_weak: float = 0.35    # high-freq motor (Xbox right)
+@export_range(0.0, 1.0) var rumble_strong: float = 0.65  # low-freq motor (Xbox left)
+@export var rumble_duration: float = 0.12                # seconds
+@export_range(0.0, 0.5) var rumble_per_extra_hit: float = 0.12  # bump per goblin beyond the first
+
+@export_group("Range indicator")
+@export var show_range_indicator: bool = true
+@export var range_indicator_color: Color = Color(1, 1, 1, 0.7)
+@export var range_indicator_width: float = 2.0
+@export var range_indicator_segments: int = 24
 
 # 8 direction names, ordered by 45-degree steps starting at east (+x), going clockwise
 # (screen Y is down, so the next step after east is south-east).
@@ -30,6 +45,7 @@ var health: int
 var _state: int = State.IDLE
 var _facing: String = "south"
 var _attack_timer: float = 0.0
+var _post_attack_timer: float = 0.0      # locks out walking briefly after a punch
 var _is_dead: bool = false
 var _punch_aim: Vector2 = Vector2.ZERO   # aim locked in when the punch starts
 var _punch_hit_done: bool = false        # ensures the hit lands once per punch
@@ -55,10 +71,15 @@ func _process(delta: float) -> void:
 		camera.offset = Vector2(randf_range(-1.0, 1.0), randf_range(-1.0, 1.0)) * shake_max_offset * amt
 	elif camera.offset != Vector2.ZERO:
 		camera.offset = Vector2.ZERO
+	# Range indicator follows current facing — redraw each frame.
+	if show_range_indicator:
+		queue_redraw()
 
 func _physics_process(delta: float) -> void:
 	if _attack_timer > 0.0:
 		_attack_timer -= delta
+	if _post_attack_timer > 0.0:
+		_post_attack_timer -= delta
 
 	if _is_dead:
 		velocity = Vector2.ZERO
@@ -76,10 +97,16 @@ func _physics_process(delta: float) -> void:
 		_start_punch()
 		return
 
-	# Otherwise walk or idle.
+	# Otherwise walk, aim, or idle.
+	# A light stick tilt (below walk_threshold) only updates facing — useful for aiming
+	# punches without sliding. Past the threshold, the player walks at analog speed.
+	# Immediately after a punch we still allow aim updates, but suppress walking for a
+	# beat (post_attack_lockout) so spam-tapping doesn't creep us forward between swings.
 	var input_dir := _read_move_input()
-	if input_dir != Vector2.ZERO:
+	var input_mag := input_dir.length()
+	if input_mag > 0.0:
 		_facing = _dir_to_name(input_dir)
+	if input_mag >= walk_threshold and _post_attack_timer <= 0.0:
 		_state = State.WALK
 		velocity = input_dir * move_speed
 		_play("walk_" + _facing)
@@ -92,20 +119,14 @@ func _physics_process(delta: float) -> void:
 # ---------------- Input ----------------
 
 func _read_move_input() -> Vector2:
-	var d := Vector2.ZERO
-	if Input.is_key_pressed(KEY_W) or Input.is_key_pressed(KEY_UP):
-		d.y -= 1.0
-	if Input.is_key_pressed(KEY_S) or Input.is_key_pressed(KEY_DOWN):
-		d.y += 1.0
-	if Input.is_key_pressed(KEY_A) or Input.is_key_pressed(KEY_LEFT):
-		d.x -= 1.0
-	if Input.is_key_pressed(KEY_D) or Input.is_key_pressed(KEY_RIGHT):
-		d.x += 1.0
-	return d.normalized()
+	# Action-based so keyboard, D-pad, and the analog left stick all feed in.
+	# Returns analog magnitude (already deadzoned), so a half-tilted stick
+	# walks at half speed; a digital input is always unit length.
+	return Input.get_vector("move_left", "move_right", "move_up", "move_down")
 
 func _wants_attack() -> bool:
-	return Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) \
-		or Input.is_key_pressed(KEY_SPACE) or Input.is_key_pressed(KEY_J)
+	# Press, not hold — every punch is a deliberate tap. Tap again to swing again.
+	return Input.is_action_just_pressed("attack")
 
 # ---------------- Attack ----------------
 
@@ -114,16 +135,12 @@ func _start_punch() -> void:
 	_attack_timer = attack_cooldown
 	velocity = Vector2.ZERO
 
-	# Face toward the mouse for the hit direction.
-	var aim := get_global_mouse_position() - global_position
-	if aim.length() > 0.001:
-		_facing = _dir_to_name(aim)
-		aim = aim.normalized()
-	else:
-		aim = _facing_vector()
+	# Punch goes in whichever 8-way direction the player is currently facing.
+	# _facing only changes when a movement key is pressed (see _physics_process),
+	# so the punch direction stays locked in until the player chooses to face elsewhere.
+	var aim := _facing_vector()
 
-	# Pick the punch that swings toward the target: aim on his left -> punch_left,
-	# aim on his right -> punch_right.
+	# Pick the swing arm by which side of the body the punch goes to.
 	_play("punch_left" if aim.x < 0.0 else "punch_right")
 
 	# Damage is dealt on the LAST frame of the punch (see _on_frame_changed).
@@ -159,6 +176,17 @@ func _impact(hits: int) -> void:
 	var trauma := shake_per_hit + 0.08 * float(hits - 1)
 	_shake_trauma = minf(_shake_trauma + trauma, 1.0)
 	_hit_stop(hit_stop_duration)
+	_rumble(hits)
+
+func _rumble(hits: int) -> void:
+	if not rumble_enabled:
+		return
+	var bump := rumble_per_extra_hit * float(hits - 1)
+	var weak := clampf(rumble_weak + bump, 0.0, 1.0)
+	var strong := clampf(rumble_strong + bump, 0.0, 1.0)
+	# Rumble every connected pad — if a second player plugs in later, no rewiring needed.
+	for device in Input.get_connected_joypads():
+		Input.start_joy_vibration(device, weak, strong, rumble_duration)
 
 func _hit_stop(duration: float) -> void:
 	if _hit_stopping:
@@ -173,6 +201,7 @@ func _hit_stop(duration: float) -> void:
 func _on_anim_finished() -> void:
 	if _state == State.PUNCH:
 		_state = State.IDLE
+		_post_attack_timer = post_attack_lockout
 
 # ---------------- Health ----------------
 
@@ -207,6 +236,21 @@ func _dir_to_name(v: Vector2) -> String:
 	var deg := fposmod(rad_to_deg(v.angle()), 360.0)
 	var idx := int(round(deg / 45.0)) % 8
 	return DIR_NAMES[idx]
+
+func _draw() -> void:
+	if not show_range_indicator or _is_dead:
+		return
+	var base_angle := _facing_vector().angle()
+	var half_arc := deg_to_rad(attack_arc_degrees) * 0.5
+	var seg := maxi(range_indicator_segments, 2)
+	var points := PackedVector2Array()
+	points.append(Vector2.ZERO)
+	for i in range(seg + 1):
+		var t := float(i) / float(seg)
+		var ang := base_angle - half_arc + t * (half_arc * 2.0)
+		points.append(Vector2(attack_range, 0).rotated(ang))
+	points.append(Vector2.ZERO)
+	draw_polyline(points, range_indicator_color, range_indicator_width)
 
 func _facing_vector() -> Vector2:
 	match _facing:

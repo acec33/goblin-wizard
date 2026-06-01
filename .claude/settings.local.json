@@ -11,7 +11,13 @@
       "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --import)",
       "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --path /Users/evanchambers/Godot/PROJECTS/goblin-wizard --quit-after 60)",
       "Bash(sips -g pixelWidth -g pixelHeight \"Assets/Goblin/running/animations/Running-1ba879ad/south/frame_000.png\")",
-      "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --path /Users/evanchambers/Godot/PROJECTS/goblin-wizard --quit-after 90)"
+      "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --path /Users/evanchambers/Godot/PROJECTS/goblin-wizard --quit-after 90)",
+      "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --path . --quit-after 60)",
+      "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --path . res://Scenes/training.tscn --quit-after 30)",
+      "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --path . res://Scenes/training.tscn --quit-after 120 --verbose)",
+      "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --path . res://Scenes/start_menu.tscn --quit-after 30)",
+      "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --path . res://Scenes/exit_warning.tscn --quit-after 30)",
+      "Bash(/Applications/Godot.app/Contents/MacOS/Godot --headless --path . res://Scenes/main.tscn --quit-after 60)"
     ]
   }
 }

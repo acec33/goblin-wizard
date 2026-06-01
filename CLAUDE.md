@@ -14,9 +14,10 @@ You fight off endless hordes of dagger-wielding goblins.
 - `Scripts/main.gd` — game manager: spawns waves, tracks Kills/Wave, HUD (built in code),
   draws the dark grid arena, game-over + "press any key to restart".
 - `Scripts/player.gd` (`Scenes/player.tscn`) — the **blue ninja**. WASD/arrows to move;
-  left-mouse / Space / J to punch toward the mouse (cone hit). 8-direction walk + idle via an
-  `AnimatedSprite2D`; punch picks `punch_left`/`punch_right` by which side the mouse aim is on
-  (aim.x < 0 = left). Has health + hit flash; Camera2D follows.
+  left-mouse / Space / J to punch in the direction the player is **facing** (NOT toward the mouse).
+  8-direction walk + idle via an `AnimatedSprite2D`. Facing only updates while a movement key is
+  held; idle preserves the last facing. Punch picks `punch_left`/`punch_right` by which side
+  of his body the facing vector is on (facing.x < 0 = left). Has health + hit flash; Camera2D follows.
   Idle/walk/punch state machine keyed off `DIR_NAMES` (8-way, derived from velocity/aim angle).
   Punch damage lands on the animation's LAST frame (`frame_changed`) and applies knockback to
   goblins (`goblin.take_damage(amount, knockback_vec)`; goblin decays it via `knockback_decay`).

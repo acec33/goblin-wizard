@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://dd56a874us8na"]
+
+[ext_resource type="Script" uid="uid://bbjah7iib3tjt" path="res://Scripts/exit_warning.gd" id="1_exit_warning"]
+[ext_resource type="Texture2D" uid="uid://da3pc81ji0xuy" path="res://Assets/button_xbox_digital_a_7.png" id="2_kq6sl"]
+[ext_resource type="Texture2D" uid="uid://d1ayspah7uijr" path="res://Assets/button_xbox_digital_b_7.png" id="3_kd81d"]
+
+[node name="ExitWarning" type="Control" unique_id=2016970412]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_exit_warning")
+
+[node name="Backdrop" type="ColorRect" parent="." unique_id=99208260]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6)
+
+[node name="Panel" type="PanelContainer" parent="Backdrop" unique_id=1063148765]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -260.0
+offset_top = -130.0
+offset_right = 260.0
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Backdrop/Panel" unique_id=1177966497]
+layout_mode = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 28
+
+[node name="VBox" type="VBoxContainer" parent="Backdrop/Panel/Margin" unique_id=1441902225]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Title" type="Label" parent="Backdrop/Panel/Margin/VBox" unique_id=333036621]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 32
+text = "Are you sure?"
+horizontal_alignment = 1
+
+[node name="Buttons" type="HBoxContainer" parent="Backdrop/Panel/Margin/VBox" unique_id=744274499]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="YesGroup" type="HBoxContainer" parent="Backdrop/Panel/Margin/VBox/Buttons" unique_id=836571326]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="YesIcon" type="TextureRect" parent="Backdrop/Panel/Margin/VBox/Buttons/YesGroup" unique_id=1275310358]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("2_kq6sl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="YesButton" type="Button" parent="Backdrop/Panel/Margin/VBox/Buttons/YesGroup" unique_id=1502618125]
+custom_minimum_size = Vector2(140, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Yes"
+
+[node name="NoGroup" type="HBoxContainer" parent="Backdrop/Panel/Margin/VBox/Buttons" unique_id=935860610]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="NoIcon" type="TextureRect" parent="Backdrop/Panel/Margin/VBox/Buttons/NoGroup" unique_id=1874578768]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("3_kd81d")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NoButton" type="Button" parent="Backdrop/Panel/Margin/VBox/Buttons/NoGroup" unique_id=1278507282]
+custom_minimum_size = Vector2(140, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "No"

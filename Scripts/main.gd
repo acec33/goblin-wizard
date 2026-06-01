@@ -14,6 +14,8 @@ const GoblinScene := preload("res://Scenes/goblin.tscn")
 @export var bg_color: Color = Color(0.09, 0.10, 0.13)
 @export var grid_color: Color = Color(1, 1, 1, 0.05)
 @export var grid_step: float = 64.0
+@export_file("*.tscn") var menu_scene_path: String = "res://Scenes/start_menu.tscn"
+@export var exit_prompt: String = "Return to menu?"
 
 var _wave: int = 0
 var _score: int = 0
@@ -22,11 +24,15 @@ var _game_over: bool = false
 
 @onready var _player: CharacterBody2D = $Player
 @onready var _hud = $HUD  # Scenes/hud.tscn (GameHud); untyped so it parses before the class registers
+@onready var _exit_warning = $HUD/ExitWarning
 
 func _ready() -> void:
-	Engine.time_scale = 1.0  # safety: clear any leftover hit-stop freeze on (re)start
+	# Defensive: clear leftover pause/time-scale state from prior scenes.
+	get_tree().paused = false
+	Engine.time_scale = 1.0
 	_player.health_changed.connect(_on_health_changed)
 	_player.died.connect(_on_player_died)
+	_exit_warning.confirmed.connect(_on_exit_confirmed)
 	_hud.update_health(_player.health, _player.max_health)
 	_start_next_wave()
 
@@ -34,10 +40,19 @@ func _process(_delta: float) -> void:
 	queue_redraw()  # redraw the arena each frame so the grid tracks the camera
 
 func _input(event: InputEvent) -> void:
-	if not _game_over:
+	if _game_over:
+		if (event is InputEventKey and event.pressed) or (event is InputEventMouseButton and event.pressed):
+			get_tree().reload_current_scene()
 		return
-	if (event is InputEventKey and event.pressed) or (event is InputEventMouseButton and event.pressed):
-		get_tree().reload_current_scene()
+	# Esc OR Xbox Start opens the exit prompt. B button is reserved for
+	# cancelling the prompt once it's open — not for opening it.
+	if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_ESCAPE:
+		_exit_warning.open(exit_prompt)
+	elif event.is_action_pressed("pause"):
+		_exit_warning.open(exit_prompt)
+
+func _on_exit_confirmed() -> void:
+	get_tree().change_scene_to_file(menu_scene_path)
 
 # ---------------- Waves ----------------
 

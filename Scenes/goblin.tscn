@@ -1,19 +1,20 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene format=3 uid="uid://tgkhwttsptk4"]
 
-[ext_resource type="Script" path="res://Scripts/goblin.gd" id="1_goblin"]
+[ext_resource type="Script" uid="uid://sl1ci8narlkk" path="res://Scripts/goblin.gd" id="1_goblin"]
 [ext_resource type="SpriteFrames" path="res://Assets/Goblin/goblin_frames.tres" id="2_frames"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_goblin"]
-radius = 14.0
+radius = 23.021729
 
-[node name="Goblin" type="CharacterBody2D"]
+[node name="Goblin" type="CharacterBody2D" unique_id=1063925477]
 script = ExtResource("1_goblin")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1041343058]
+scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_goblin")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.4, 0.4)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=928509134]
+scale = Vector2(2, 2)
 sprite_frames = ExtResource("2_frames")
 animation = &"idle_south"
 autoplay = "idle_south"

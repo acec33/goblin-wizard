@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cdmgnumb0n1d2"]
+
+[ext_resource type="Script" uid="uid://b7d82b7jyefxq" path="res://Scripts/damage_number.gd" id="1_dmg_num"]
+
+[node name="DamageNumber" type="Node2D" unique_id=421029476]
+script = ExtResource("1_dmg_num")
+
+[node name="Label" type="Label" parent="." unique_id=545204112]
+offset_left = -40.0
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 12.0
+theme_type_variation = &"DamageNumber"
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1

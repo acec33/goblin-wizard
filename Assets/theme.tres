@@ -1,0 +1,23 @@
+[gd_resource type="Theme" format=3 uid="uid://bh2w6jw8bmdvi"]
+
+[ext_resource type="FontFile" uid="uid://b3egc7l4wfone" path="res://Assets/fonts/DynaPuff-Regular.ttf" id="1_0dftj"]
+
+[resource]
+DamageNumber/base_type = &"Label"
+DamageNumber/colors/font_color = Color(1, 1, 1, 1)
+DamageNumber/colors/font_outline_color = Color(0, 0, 0, 1)
+DamageNumber/constants/outline_size = 6
+DamageNumber/font_sizes/font_size = 37
+DamageNumber/fonts/font = ExtResource("1_0dftj")
+HUDLabel/base_type = &"Label"
+HUDLabel/colors/font_color = Color(1, 1, 1, 1)
+HUDLabel/colors/font_outline_color = Color(0, 0, 0, 1)
+HUDLabel/constants/outline_size = 5
+HUDLabel/font_sizes/font_size = 45
+Heading/base_type = &"Label"
+Heading/colors/font_color = Color(1, 1, 1, 1)
+Heading/colors/font_outline_color = Color(0, 0, 0, 1)
+Heading/constants/outline_size = 6
+Heading/font_sizes/font_size = 73
+StartMenuButton/font_sizes/font_size = 20
+StartMenuButton/fonts/font = null
