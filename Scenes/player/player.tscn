@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://bplayer0gwiz1"]
+
+[ext_resource type="Script" path="res://Scripts/player/player.gd" id="1_player"]
+[ext_resource type="Script" path="res://Scripts/components/health_component.gd" id="3_health"]
+[ext_resource type="Script" path="res://Scripts/components/hurtbox_component.gd" id="4_hurtbox"]
+[ext_resource type="Script" path="res://Scripts/components/hitbox_component.gd" id="5_hitbox"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_body"]
+radius = 22.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hurt"]
+radius = 24.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_melee"]
+size = Vector2(56, 44)
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1_player")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.7, 0.7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_body")
+
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("3_health")
+max_health = 100.0
+
+[node name="HurtboxComponent" type="Area2D" parent="."]
+collision_layer = 32
+collision_mask = 16
+monitorable = false
+script = ExtResource("4_hurtbox")
+health_component = NodePath("../HealthComponent")
+invincibility_time = 0.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
+shape = SubResource("CircleShape2D_hurt")
+
+[node name="AimPivot" type="Node2D" parent="."]
+
+[node name="AttackHitbox" type="Area2D" parent="AimPivot"]
+collision_layer = 8
+collision_mask = 0
+monitoring = false
+script = ExtResource("5_hitbox")
+damage = 12.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AimPivot/AttackHitbox"]
+position = Vector2(42, 0)
+shape = SubResource("RectangleShape2D_melee")
+disabled = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
